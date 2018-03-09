@@ -33,6 +33,10 @@ main {
             close: 'Ok',
             closeOnSelect: false // Close upon selecting a date,
         });
+        
+        // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+        $('.modal').modal();
+
     })
 </script>
 
@@ -52,13 +56,13 @@ main {
           <li><a href="#!">Results</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-             <li><div class="user-view">
+<!--             <li><div class="user-view">
                <div class="background"></div>
                  <a href="#!user"><img class="circle" src="images/sidebarImage.jpg"></a>
                  <a href="#!name"><span class="white-text name">LOGGED IN USER HERE</span></a>
                  <a href="#!email"><span class="white-text email">EMAIL ADRESS HERE .COM</span></a>
                </div>
-             </li>
+             </li>-->
              <li><a href="#!"><i class="material-icons">info</i>News</a></li>
              <li><a href="events.php"><i class="material-icons">perm_contact_calendar</i>Events</a></li>
              <li><a href="#!"><i class="material-icons">place</i>Locations</a></li>

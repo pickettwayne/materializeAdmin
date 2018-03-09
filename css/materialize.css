@@ -796,11 +796,11 @@
 }
 
 .light-blue.lighten-1 {
-  background-color: #29b6f6 !important;
+  background-color: #FF9800 !important;
 }
 
 .light-blue-text.text-lighten-1 {
-  color: #29b6f6 !important;
+  color: #FF9800 !important;
 }
 
 .light-blue.darken-1 {
@@ -1650,6 +1650,15 @@
 .amber-text.text-accent-4 {
   color: #ffab00 !important;
 }
+
+.brown {
+  background-color: #3E1D09 !important;
+}
+
+.brown-text {
+  color: #3E1D09 !important;
+}
+
 
 .orange {
   background-color: #ff9800 !important;
@@ -2880,12 +2889,12 @@ ul.staggered-list li {
 .page-footer {
   padding-top: 20px;
   color: #fff;
-  background-color: #f6850b;
+  background-color: #ee6e73;
 }
 
 .page-footer .footer-copyright {
   overflow: hidden;
-  min-height: 50px;
+  /*min-height: 50px;*/
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2914,7 +2923,7 @@ table.bordered > tbody > tr {
 }
 
 table.striped > tbody > tr:nth-child(odd) {
-  background-color: #f2f2f2;
+  background-color: #ffe0b3;
 }
 
 table.striped > tbody > tr > td {
@@ -3369,6 +3378,7 @@ nav ul a span.badge {
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
+
 }
 
 @media only screen and (min-width: 601px) {
@@ -3379,7 +3389,7 @@ nav ul a span.badge {
 
 @media only screen and (min-width: 993px) {
   .container {
-    width: 70%;
+    width: 70%;    
   }
 }
 
@@ -4208,7 +4218,7 @@ nav ul a span.badge {
 
 nav {
   color: #fff;
-  background-color: #f6850b;
+  background-color: #ee6e73;
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -4237,13 +4247,14 @@ nav [class^="mdi-"], nav [class*="mdi-"],
 nav i.material-icons {
   display: block;
   font-size: 24px;
-  height: 90px;
-  line-height: 90px;
+  height: 56px;
+  line-height: 56px;
 }
 
 nav .nav-wrapper {
   position: relative;
   height: 100%;
+  background-color: #FF9800;
 }
 
 @media only screen and (min-width: 993px) {
@@ -4266,11 +4277,6 @@ nav .button-collapse i {
 }
 
 nav .brand-logo {
-  background-image: url(../images/mocLogo.jpg);
-  margin-left:1%;
-  background-repeat: no-repeat;
-  width: 10%;
-  height: 100%;
   position: absolute;
   color: #fff;
   display: inline-block;
@@ -4418,11 +4424,11 @@ nav .input-field label.active i {
     min-height: 64px;
   }
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 100px;
-    line-height: 100px;
+    height: 64px;
+    line-height: 64px;
   }
   .navbar-fixed {
-    height: 100px;
+    height: 64px;
   }
 }
 
@@ -5637,8 +5643,10 @@ button.btn-floating {
   right: 0;
   background-color: #fafafa;
   padding: 0;
-  max-height: 70%;
-  width: 55%;
+      height: 100%;
+  /*max-height: 100%;*/
+  /*width: 55%;*/
+   width: 75% !important ; height: 75% !important ; 
   margin: auto;
   overflow-y: auto;
   border-radius: 2px;
@@ -5647,7 +5655,8 @@ button.btn-floating {
 
 @media only screen and (max-width: 992px) {
   .modal {
-    width: 80%;
+    width: 95%;
+
   }
 }
 
@@ -7460,8 +7469,6 @@ input[type=range]:focus::-ms-fill-upper {
   position: relative;
   padding: 32px 32px 0;
   margin-bottom: 8px;
-  background-color: #f6850b;
-  
 }
 
 .side-nav .user-view > a,
@@ -7484,7 +7491,6 @@ input[type=range]:focus::-ms-fill-upper {
   bottom: 0;
   left: 0;
   z-index: -1;
-  color: red;
 }
 
 .side-nav .user-view .circle, .side-nav .user-view .name, .side-nav .user-view .email,
@@ -7555,6 +7561,8 @@ input[type=range]:focus::-ms-fill-upper {
   .side-nav .user-view,
   .side-nav .userView {
     padding: 16px 16px 0;
+    background-color: #FF9800;
+    
   }
 }
 
@@ -9413,3 +9421,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   stroke-linecap: round;
   /*shape-rendering: crispEdges;*/
 }
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-40 { font-size: 40px; }
+.material-icons.md-48 { font-size: 48px; }
