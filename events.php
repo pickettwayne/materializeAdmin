@@ -178,7 +178,7 @@
                               <td>-</td>
                               <td class="right">£20</td>
                               <td class="center-align"><i class="material-icons md-40">edit</i></td>
-                              <td class="center-align"><i class="material-icons md-40">delete</i></td>
+                              <td class="center-align"><i class="material-icons md-40 red-text">delete</i></td>
                             </tr>
                             <tr>
                               <td>22-04-2018</td>
@@ -228,7 +228,7 @@
     
           <!-- Modal Trigger -->
         <div class="center">
-            <a class="btn-floating btn-large waves-effect waves-light red btn modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light green btn modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
         </div>
           <div style="clear:both"></div>
     <br>
