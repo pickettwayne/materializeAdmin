@@ -5646,7 +5646,8 @@ button.btn-floating {
       height: 100%;
   /*max-height: 100%;*/
   /*width: 55%;*/
-   width: 75% !important ; height: 75% !important ; 
+   /*width: 75% !important ; height: 75% !important ;*/ 
+   width: 95%; height: 95%; 
   margin: auto;
   overflow-y: auto;
   border-radius: 2px;
@@ -5701,7 +5702,7 @@ button.btn-floating {
 
 .modal.modal-fixed-footer {
   padding: 0;
-  height: 70%;
+  height: 80%;
 }
 
 .modal.modal-fixed-footer .modal-content {

@@ -4758,7 +4758,6 @@ if (Vel) {
                 }
               }
             }
-
             // Update oldVal
             oldVal = val;
           });

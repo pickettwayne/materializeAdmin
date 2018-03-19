@@ -5,7 +5,7 @@
    
       <!--<h1 class="header center brown-text">MOC Admin Page</h1>-->
       <div class="row center">
-        <h5 class="header light">Events</h5>
+        <h5 class="header light">Location</h5>
       </div>
     </div>
   </div>
@@ -15,24 +15,16 @@
     <!-- Modal Structure -->
     <div id="modal1" class="modal modal-fixed-footer">
       <div class="modal-content">
-        <h4>Events</h4>
+        <h4>News</h4>
             <form class="col s12">
-                  <div class="row">
+<!--                  <div class="row">
                       <div class="input-field col s6">
-                          <input type="text" class="datepicker" id="date"> <label for="date">Date</label>
+                          <input type="text" class="datepicker" id="date"> <label for="date">Title</label>
                       </div>
-                  </div>
+                  </div>-->
                   <div class="row">
                       <div class="input-field col s12">
-                          <input type="text" class="validate" id="event"> <label for="event">Event</label>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="input-field col s12">
-                          <input type="text" class="validate" id="venue"> <label for="venue">Venue</label>
-                      </div>
-                      <div class="input-field col s12">
-                          <input id="round" type="text"> <label for="round">Round</label>
+                          <input type="text" class="validate" id="event"> <label for="event">Title</label>
                       </div>
                   </div>
                   <div class="row">
@@ -42,28 +34,8 @@
                           <label for="comments">Comments</label>
                       </div>
                   </div>
-  <!--                <div class="row">
-                      <div class="input-field col s12">
-                          <input type="text" class="validate" id="price"> <label for="price">Price (£)</label>
-                      </div>
-                  </div>-->
-                  <div class="row">
-                         <div class="col s12">
-                           <div class="input-field col s13">
-                             <!--<input id="price" type="text" class="validate">-->
-                             <input id="price" type="text" >
-                             <label for="price" >Price (£)</label>
-                           </div>
-                         </div>
-                  </div>
-<!--                  <div class="switch">
-                      <label>
-                        Disable
-                        <input type="checkbox">
-                        <span class="lever"></span>
-                        Enable
-                      </label>
-                  </div>-->
+
+
               </form>
       </div>
        
@@ -78,18 +50,11 @@
     <div class="section">
         
         
-                        <table id="table" class="striped responsive-table">
+<!--                        <table id="table" class="striped responsive-table">
                           <thead>
                             <tr>
-                                <th>Date</th>
-                                <th>Event</th>
-                                <th>Venue</th>
-                                <th>Venue</th>
-                                <th>Round</th>
-                                <th>Comments</th>
-                                <th>Host</th>
-                                <th>Type</th>
-                                <th>Price</th>
+                                <th>Title</th>
+                                <th>Story</th>
                                 <th class="center-align">Edit</th>
                                 <th class="center-align">Delete</th>
                             </tr>
@@ -97,60 +62,32 @@
 
                           <tbody>
                             <tr>
-                              <td>22-04-2018</td>
-                              <td>Newmans Quarry</td>
-                              <td>Newmans Quarry</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>£20</td>
+                              <td>MSA Cover</td>
+                              <td style="width: 10%;">We are covered by the MSA (motor sports Association). Please register your name and telephone number with one of the officials today</td>
                               <td class="center-align"><i class="material-icons md-40 green-text">edit</i></td>
                               <td class="center-align"><i class="material-icons md-40 red-text">delete</i></td>
                             </tr>
                             <tr>
-                              <td>22-04-2018</td>
-                              <td>Wooton Wawen</td>
-                              <td>Wooton Wawen</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>£20</td>
+                              <td>Come and have a go</td>
+                              <td>Come and have a go at offroading, we offer a variety of different disciplines, tyro, trials, challenges and comp safari. From starting off slow to finding punches and winching yourself around, to zooming round a course as fast as you can. This is your chance to join a Club that will improve your driving skills with a friendly group of like-minded people.</td>
                               <td class="center-align"><i class="material-icons md-40 green-text">edit</i></td>
                               <td class="center-align"><i class="material-icons md-40 red-text">delete</i></td>
                             </tr>
                             <tr>
                               <td>07-10-2018</td>
                               <td>Halton</td>
-                              <td>Halton</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>£20</td>
                               <td class="center-align"><i class="material-icons md-40 green-text">edit</i></td>
                               <td class="center-align"><i class="material-icons md-40 red-text">delete</i></td>
                             </tr>
                             <tr>
                               <td>18-11-2018</td>
                               <td>Newmans Quarry</td>
-                              <td>Newmans Quarry</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>£20</td>
                               <td class="center-align"><i class="material-icons md-40 green-text">edit</i></td>
                               <td class="center-align"><i class="material-icons md-40 red-text">delete</i></td>
                             </tr>
 
                           </tbody>
-                        </table>
+                        </table>-->
           
         
     </div>
