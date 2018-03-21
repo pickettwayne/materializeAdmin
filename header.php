@@ -65,10 +65,10 @@
                 <a href="#!email"><span class="white-text email">EMAIL ADRESS HERE .COM</span></a>
               </div>
             </li>
-            <li><a href="#!">News</a></li>
+            <li><a href="news.php">News</a></li>
             <li><a href="events.php">Events</a></li>
-            <li><a href="#!">Location</a></li>
-            <li><a href="#!">Results</a></li>
+            <li><a href="location.php">Location</a></li>
+            <li><a href="results.php">Results</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>

@@ -36,11 +36,15 @@
                   </div>
 
 
-              </form>
+                        <div class="left">
+                                   <a><i class="material-icons md-40 red-text">delete</i></a>
+                        </div>
+                                        
+            </form>
       </div>
        
       <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Exit</a>
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancel</a>
         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Add</a>
       </div>
     </div>
@@ -49,41 +53,32 @@
     <!--MAIN CONTENT SECTION FOR THE EVENTS-->
     <div class="section">
         
+     
         
-                        <table id="table" class="striped responsive-table">
+                        <table id="table" class="striped responsive-table centered fixed">
+                          
                           <thead>
-                            <tr>
-                                <th>Title</th>
-                                <th>Story</th>
-                                <th class="center-align">Edit</th>
-                                <th class="center-align">Delete</th>
-                            </tr>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Story</th>
+                                </tr>
                           </thead>
-
                           <tbody>
+                                
                             <tr>
-                              <td>MSA Cover</td>
-                              <td style="width: 10%;">We are covered by the MSA (motor sports Association). Please register your name and telephone number with one of the officials today</td>
-                              <td class="center-align"><i class="material-icons md-40 green-text">edit</i></td>
-                              <td class="center-align"><i class="material-icons md-40 red-text">delete</i></td>
+                                <td class="title-column-width"><h5>MSA Cover</em></h5></td>
+                                <td class="truncate">We are covered by the MSA (motor sports Association). Please register your name and telephone number with one of the officials today</td>
+                              <td><i class="material-icons md-40 green-text">edit</i></td>
                             </tr>
                             <tr>
-                              <td>Come and have a go</td>
+                                <td><h5>Come and have a go</h5></td>
                               <td>Come and have a go at offroading, we offer a variety of different disciplines, tyro, trials, challenges and comp safari. From starting off slow to finding punches and winching yourself around, to zooming round a course as fast as you can. This is your chance to join a Club that will improve your driving skills with a friendly group of like-minded people.</td>
                               <td class="center-align"><i class="material-icons md-40 green-text">edit</i></td>
-                              <td class="center-align"><i class="material-icons md-40 red-text">delete</i></td>
                             </tr>
                             <tr>
-                              <td>07-10-2018</td>
-                              <td>Halton</td>
-                              <td class="center-align"><i class="material-icons md-40 green-text">edit</i></td>
-                              <td class="center-align"><i class="material-icons md-40 red-text">delete</i></td>
-                            </tr>
-                            <tr>
-                              <td>18-11-2018</td>
-                              <td>Newmans Quarry</td>
-                              <td class="center-align"><i class="material-icons md-40 green-text">edit</i></td>
-                              <td class="center-align"><i class="material-icons md-40 red-text">delete</i></td>
+                                <td><h5>MSA Cover</h5></td>
+                              <td>We are covered by the MSA (motor sports Association). Please register your name and telephone number with one of the officials today</td>
+                              <td><i class="material-icons md-40 green-text">edit</i></td>
                             </tr>
 
                           </tbody>

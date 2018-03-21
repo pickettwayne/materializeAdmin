@@ -78,7 +78,7 @@
     <div class="section">
         
         
-                        <table id="table" class="striped responsive-table">
+                        <table id="table" class="striped responsive-table centered">
                           <thead>
                             <tr>
                                 <th>Date</th>
@@ -90,14 +90,14 @@
                                 <th>Host</th>
                                 <th>Type</th>
                                 <th>Price</th>
-                                <th class="center-align">Edit</th>
-                                <th class="center-align">Delete</th>
+                                <th colspan="2">Edit</th>
+
                             </tr>
                           </thead>
 
                           <tbody>
                             <tr>
-                              <td>22-04-2018</td>
+                              <td><strong>22-04-2018</strong></td>
                               <td>Newmans Quarry</td>
                               <td>Newmans Quarry</td>
                               <td>-</td>
@@ -106,11 +106,11 @@
                               <td>-</td>
                               <td>-</td>
                               <td>£20</td>
-                              <td class="center-align"><i class="material-icons md-40 green-text">edit</i></td>
-                              <td class="center-align"><i class="material-icons md-40 red-text">delete</i></td>
+                              <td><i class="material-icons md-40 green-text">edit</i></td>
+                              <td><i class="material-icons md-40 red-text">delete</i></td>
                             </tr>
                             <tr>
-                              <td>22-04-2018</td>
+                              <td><strong>22-04-2018</strong></td>
                               <td>Wooton Wawen</td>
                               <td>Wooton Wawen</td>
                               <td>-</td>
@@ -119,11 +119,11 @@
                               <td>-</td>
                               <td>-</td>
                               <td>£20</td>
-                              <td class="center-align"><i class="material-icons md-40 green-text">edit</i></td>
-                              <td class="center-align"><i class="material-icons md-40 red-text">delete</i></td>
+                              <td><i class="material-icons md-40 green-text">edit</i></td>
+                              <td><i class="material-icons md-40 red-text">delete</i></td>
                             </tr>
                             <tr>
-                              <td>07-10-2018</td>
+                              <td><strong>07-10-2018</strong></td>
                               <td>Halton</td>
                               <td>Halton</td>
                               <td>-</td>
@@ -132,11 +132,11 @@
                               <td>-</td>
                               <td>-</td>
                               <td>£20</td>
-                              <td class="center-align"><i class="material-icons md-40 green-text">edit</i></td>
-                              <td class="center-align"><i class="material-icons md-40 red-text">delete</i></td>
+                              <td><i class="material-icons md-40 green-text">edit</i></td>
+                              <td><i class="material-icons md-40 red-text">delete</i></td>
                             </tr>
                             <tr>
-                              <td>18-11-2018</td>
+                              <td><strong>18-11-2018</strong></td>
                               <td>Newmans Quarry</td>
                               <td>Newmans Quarry</td>
                               <td>-</td>
@@ -145,8 +145,8 @@
                               <td>-</td>
                               <td>-</td>
                               <td>£20</td>
-                              <td class="center-align"><i class="material-icons md-40 green-text">edit</i></td>
-                              <td class="center-align"><i class="material-icons md-40 red-text">delete</i></td>
+                              <td><i class="material-icons md-40 green-text">edit</i></td>
+                              <td><i class="material-icons md-40 red-text">delete</i></td>
                             </tr>
 
                           </tbody>
