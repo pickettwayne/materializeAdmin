@@ -10,13 +10,15 @@
     </div>
   </div>
 
-
+    
   <div class="container">
+    <!--MODAL--> 
     <!-- Modal Structure -->
     <div id="modal1" class="modal modal-fixed-footer">
       <div class="modal-content">
         <h4>Events</h4>
             <form class="col s12">
+                
                   <div class="row">
                       <div class="input-field col s6">
                           <input type="text" class="datepicker" id="date"> <label for="date">Date</label>
@@ -76,9 +78,7 @@
    
     <!--MAIN CONTENT SECTION FOR THE EVENTS-->
     <div class="section">
-        
-        
-                        <table id="table" class="striped responsive-table centered">
+        <table id="table" class="striped responsive-table centered">
                           <thead>
                             <tr>
                                 <th>Date</th>
@@ -94,65 +94,44 @@
 
                             </tr>
                           </thead>
+        <?php 
+                $query = "SELECT * FROM events";
+                $result = mysqli_query($conn,$query);
 
-                          <tbody>
-                            <tr>
-                              <td><strong>22-04-2018</strong></td>
-                              <td>Newmans Quarry</td>
-                              <td>Newmans Quarry</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>£20</td>
-                              <td><i class="material-icons md-40 green-text">edit</i></td>
-                              <td><i class="material-icons md-40 red-text">delete</i></td>
-                            </tr>
-                            <tr>
-                              <td><strong>22-04-2018</strong></td>
-                              <td>Wooton Wawen</td>
-                              <td>Wooton Wawen</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>£20</td>
-                              <td><i class="material-icons md-40 green-text">edit</i></td>
-                              <td><i class="material-icons md-40 red-text">delete</i></td>
-                            </tr>
-                            <tr>
-                              <td><strong>07-10-2018</strong></td>
-                              <td>Halton</td>
-                              <td>Halton</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>£20</td>
-                              <td><i class="material-icons md-40 green-text">edit</i></td>
-                              <td><i class="material-icons md-40 red-text">delete</i></td>
-                            </tr>
-                            <tr>
-                              <td><strong>18-11-2018</strong></td>
-                              <td>Newmans Quarry</td>
-                              <td>Newmans Quarry</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>-</td>
-                              <td>£20</td>
-                              <td><i class="material-icons md-40 green-text">edit</i></td>
-                              <td><i class="material-icons md-40 red-text">delete</i></td>
-                            </tr>
+                $count = 1;
+                while($row = mysqli_fetch_array($result) ){
+                    $id = $row['id'];
+                    $date = $row['date'];
+                    $event = $row['event'];
+                    $venue = $row['venue'];
+                    $round = $row['round'];
+                    $comments = $row['comments'];
+                    $host = $row['host'];
+                    $type = $row['type'];
+                    $price = $row['price'];
 
-                          </tbody>
-                        </table>
-          
-        
+                ?>
+                <tbody>      
+                    <tr>
+                        <!--<td align='center'><?php echo $id; ?></td>-->
+                        <td width="10%" align='center'><?php echo $date; ?></td>
+                        <td width="10%"><?php echo $event; ?></td>
+                        <td><?php echo $venue; ?></td>
+                        <td><?php echo $round; ?></td>
+                        <td><?php echo $comments; ?></td>
+                        <td><?php echo $host; ?></td>
+                        <td><?php echo $type; ?></td>
+                        <td><?php echo $price; ?></td>
+                        <td><i class="material-icons md-40 green-text">edit</i></td>
+                        <!--<td><i class="material-icons md-40 red-text" id="delete" name="deleteEvent" value="<?php // echo $row["id"] ?>">delete</i></td>-->
+                        <td align='center'><span class='delete' id='del_<?php echo $id; ?>'>Delete</span></td>
+                    </tr>
+                </tbody>
+                <?php
+                    $count++;
+                }
+                ?>
+        </table>
     </div>
     
           <!-- Modal Trigger -->

@@ -18,6 +18,9 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   
+<script src='js/jquery-3.0.0.js' type='text/javascript'></script>
+<script src='js/script.js' type='text/javascript'></script>
+  
   <script>
     $( document ).ready(function(){
         $(".button-collapse").sideNav();

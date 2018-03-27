@@ -34,15 +34,13 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "DATE: " . $row["date"]. " - EVENT: " . $row["event"]. " - VENUE " . $row["venue"]. " - Venue<br>";
+        echo $row["venue"]. " - Venue<br>";
     }
-} else {
-    echo "0 results";
-}
+} 
 
 ?>
             
-            ?>
+            
             
             
 <!--          <div class="icon-block">
