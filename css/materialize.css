@@ -2824,6 +2824,15 @@ ul.staggered-list li {
   .hide-on-small-only, .hide-on-small-and-down {
     display: none !important;
   }
+  .trun{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left:5%;
+    width:90%;
+  }
+  
 }
 
 @media only screen and (max-width: 992px) {
@@ -2847,6 +2856,9 @@ ul.staggered-list li {
 @media only screen and (min-width: 993px) {
   .hide-on-large-only {
     display: none !important;
+  }
+  .width10{
+      width: 10%;
   }
 }
 
@@ -3395,7 +3407,7 @@ nav ul a span.badge {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 90%;
+  width: 95%;
 
 }
 
