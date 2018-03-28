@@ -142,33 +142,8 @@
             <a class="btn-floating btn-large waves-effect waves-light green btn modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
         </div>
 
-          
-          
-          
-          <!-- Compiled and minified CSS -->
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-
-     Compiled and minified JavaScript 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>-->
-            
-          
-          
           <!-- Modal Trigger -->
-          <!--<a class="waves-effect waves-light btn view" href="#modal1">View Scores</a>-->
-
-  <a class="waves-effect waves-light btn " href="#modal1">Modal</a>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div
-          
+          <a class="waves-effect waves-light btn view" href="#modal1">View Scores</a>    
           <div style="clear:both"></div>
     <br>
        
