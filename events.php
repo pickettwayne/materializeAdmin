@@ -1,5 +1,4 @@
 <?php include 'header.php' ?>
-
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
    
@@ -11,12 +10,12 @@
   </div>
 
     
-   <div class="container">
+<div class="container">
     <!-- Modal Structure -->
     <div id="modal1" class="modal modal-fixed-footer">
       <div class="modal-content">
         <h4>Events</h4>
-            <form class="col s12">
+            <form class="col s12" action="eventAdd.php" method="post" id ="addEvent" name="addEvent">
                   <div class="row">
                       <div class="input-field col s6">
                           <input type="text" class="datepicker" id="date"> <label for="date">Date</label>
@@ -69,15 +68,16 @@
        
       <div class="modal-footer">
         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Exit</a>
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Add</a>
+        
+        <!--GET THE ADD BUTTON WORKING!-->
+        <a class="modal-action modal-close waves-effect waves-green btn-flat">Add</a>
       </div>
     </div>
     <!--END OF MODAL-->
-   
+
     <!--MAIN CONTENT SECTION FOR THE EVENTS-->
     <div class="section">
-        
-        
+
                         <table id="table" class="striped responsive-table centered">
                           <thead>
                             <tr>
@@ -89,7 +89,6 @@
                                 <th>Host</th>
                                 <th>Type</th>
                                 <th>Price</th>
-                                <!--<th colspan="2">Edit</th>-->
 
                             </tr>
                           </thead>
@@ -124,7 +123,6 @@
                                 <td><?php echo $price; ?></td>
                                 <td>
                                     <i class="material-icons md-40 green-text">edit</i>
-                                        
                                     <span class='delete' id='del_<?php echo $id; ?>'><i class="material-icons md-40 red-text">delete</i></span>
                                 </td>
                             </tr>
@@ -137,13 +135,11 @@
                         </table>
     </div>
     
-          <!-- Modal Trigger -->
-        <div class="center">
+                  <!-- Modal Trigger -->
+        <div class="left">
             <a class="btn-floating btn-large waves-effect waves-light green btn modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
-        </div>
-
-          <!-- Modal Trigger -->
-          <a class="waves-effect waves-light btn view" href="#modal1">View Scores</a>    
+        </div>   
+          
           <div style="clear:both"></div>
     <br>
        

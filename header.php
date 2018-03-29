@@ -17,9 +17,8 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
-  
   <!--TESTING ONE-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>-->
   <script src='js/script.js' type='text/javascript'></script>
   
   <script>
@@ -46,6 +45,8 @@
               console.log(modal, trigger);
             },
             complete: function() { alert('Entry Added!!'); } // Callback for Modal close
+            
+            
           }
         );
 

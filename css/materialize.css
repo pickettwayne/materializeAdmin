@@ -9139,6 +9139,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-size: 1.1rem;
   padding: 0 1rem;
   color: #26a69a;
+  margin-left: 3%;
 }
 
 .picker__clear {
