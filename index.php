@@ -1,77 +1,92 @@
-<?php include 'header.php' ?>
+<!DOCTYPE html>
+<html>
+<head>
 
-<div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center brown-text">MOC Admin Page</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">This page to show Google Analytics Stuff for MOC</h5>
-      </div>
-<!--      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>-->
-      <br><br>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/logincss/loginmaterialize.css"/>
+      <link type="text/css" rel="stylesheet" href="css/logincss/loginstyle.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    </div>
-  </div>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/loginjs/login.materialize.min.js"></script>
+      <script type="text/javascript">
+      	
+     $(document).ready(function(){
+//     $('.modal').modal();
 
-  <div class="container">
-    <div class="section">
+     $('#snipper').hide(); 
 
-         Home page to show google analytics.  
-      <div class="row">
-        <div class="col s12 m4">
-            
-            <?php
-            
-            
+     $('#connect').click(function(){
+         $('#snipper').show();
+         $('#form').hide();
+         $('#connect').hide();
+       
+       });
+
+     });
+     
+        //START MODAL AUTOMATICALLY AND DON'T ALLOW TO CLOSE IT BY CLICKING OUT OF MODAL!
+        $(document).ready(function(){
+        $('#modal').modal({dismissible:false});
+        $('#modal').modal('open'); 
+ });
+     
+   
+       
+      </script>
+      
+	    <title>MOC Login</title>
+</head>
+<body>
 
 
-$sql = "SELECT * FROM events";
-$result = $conn->query($sql);
+<div class="container">
 
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo $row["venue"]. " - Venue<br>";
-    }
-} 
-
-?>
-            
-            
-            
-            
-<!--          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+<!--          <div class="col s10 offset-s1 center-align">
+              
+              
+            <a class=" waves-effect waves-light  btn  red" href="#modal1" style="margin-top:300px;">Admin Login</a>
           </div>-->
-        </div>
 
-<!--        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+          <div id="modal" class="modal">
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <div class="container"> 
+            <div class="modal-content">
+                  <h4 class="orange-text center-align" style="margin-top:25px;">MOC Admin Login</h4>
+                  </br>
+                  <form class="cols12" id="form" method="post" action="loginAction.php">
+                      	<div class="row">
+                        		<div class="input-field cols6">
+                               <i class="material-icons prefix red-text">account_circle</i>
+                        		   <input placeholder="email" id="email" class="email" name="email" type="text">
+                        		</div>
+                        		<div class="input-field cols6 ">
+                               <i class="material-icons prefix  red-text">lock</i>
+                        	    	<input placeholder="Insert Password" id="password" name="password" class="password " type="password">
+                        		</div>
+                      	</div>
+
+                      
+                </div>
+                 <div class="spinner" id="snipper">
+                        <div class="rect1"></div>
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
+                        <div class="rect6"></div>
+                        <div class="rect7"></div>
+               </div>
+                <div class="modal-footer">
+                   <button class=" orange btn waves-effect waves-light blue" type="submit" name="submit" id="connect">Login</button>
+                </div></form>
+                <br><br>
           </div>
-        </div>-->
 
-<!--        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+     </div>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>-->
-      </div>
-
-    </div>
-    <br><br>
-  </div>
-
-<?php include 'footer.php' ?> 
+</div>
+</body>
+</html>
